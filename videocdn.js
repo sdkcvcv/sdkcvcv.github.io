@@ -354,9 +354,9 @@
             var file = _this4.getFile(element, true);
 
             if (file) {
-				var is1080 = '1080p' === element.quality;
-				if (is1080) {
-					file = file.replace(/720\.mp4$/, '1080.mp4')
+				var is2160 = '2160p' === element.quality;
+				if (is2160) {
+					file = file.replace(/720\.mp4$/, '2160.mp4')
 				}
               _this4.start();
 
@@ -370,7 +370,7 @@
 				  var url = _this4.getFile(elem);
                 playlist.push({
                   title: elem.title,
-                  url: is1080 ? url.replace(/720\.mp4$/, '1080.mp4') : url,
+                  url: is1080 ? url.replace(/720\.mp4$/, '2160.mp4') : url,
                 });
               });
               Lampa.Player.playlist(playlist);
