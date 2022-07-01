@@ -370,7 +370,7 @@
 				  var url = _this4.getFile(elem);
                 playlist.push({
                   title: elem.title,
-                  url: is1080 ? url.replace(/720\.mp4$/, '2160.mp4') : url,
+                  url: is2160 ? url.replace(/720\.mp4$/, '2160.mp4') : url,
                 });
               });
               Lampa.Player.playlist(playlist);
